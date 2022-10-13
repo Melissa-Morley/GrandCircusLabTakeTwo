@@ -1,0 +1,137 @@
+header {
+    font-size: 15px;
+    font-family: "OpenSans", sans-serif;
+    color: #69696a;
+    margin: 15px 10px; 
+
+}
+#header-site-name {
+    color: #000;
+    
+}
+
+div {
+    padding: 5px;
+}
+
+main {
+    background-color: #f9fafc;
+    font-family: "OpenSans", sans-serif;
+    margin: 0px 10px;
+    font-size: 10px;
+}
+
+h1 {
+    padding-left: 5px;
+    font-family: "OpenSans", sans-serif;
+}
+#hipster {
+    color: #69696a;
+    border-left: 3px solid #69696a;
+    padding-left: 10px;
+    margin: 15px 10px;
+    font-size: 15px;
+}
+
+#firstButton, #secondButton {
+    font-family: "OpenSans", sans-serif;
+    background-color: #000;
+    color: #FFF;
+    padding: 10px 50px;
+    padding-left: 250px;
+    padding-right: 250px;
+    border-radius: 20px;
+    margin: 0px 10px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+footer {
+    width: 100wv;
+}
+
+
+.bottomLinks {
+    font-family: "OpenSans", sans-serif;
+    font-size: 15px;
+    color: #69696a;
+    background-color: rgba(247, 193, 162, 0.7);
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+} 
+
+
+.left {
+    color: #000;
+    
+}
+
+.push {
+    margin-left: auto;
+}
+
+@media screen and (min-width: 768px) { 
+
+    nav {
+        display: flex;
+
+    }
+
+    #workLink {
+        margin-left: auto;
+    }
+
+    #firstButton {
+        width: 90px;
+        height: 5px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+    }
+    #hipster {
+        width: 50%;
+    }
+
+    #pinkDot {
+        background-color: rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
+        width: 210px;
+        height: 210px;
+        display: block;
+        position: absolute;
+        right: 140px;
+        top: 80px;
+    }
+
+    #peachDot {
+        background-color: rgba(247, 193, 162, 0.7);
+        border-radius: 50%;
+        width: 165px;
+        height: 165px;
+        display: block;
+        position: absolute;
+        right: 75px;
+        top: 210px;
+    }
+
+    #purpleDot {
+        background-color: rgba(207, 130, 213, 0.6);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: block;
+        position: absolute;
+        top: 150px;
+        right: 85px;
+    }
+
+    #secondButton {
+        width: 50%;
+    }
+}
