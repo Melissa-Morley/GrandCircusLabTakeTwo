@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <section>
+        <form id = "moneyForm">
+            <label for = "how many">How many?</label>
+            <input type = "number" name = "count">
+            <label for = "which coin">Which coin?</label>
+            <select id="moneyType" name="moneyType">
+                <option value ="quarter">Quarter</option>
+                <option value = "dime">Dime</option>
+                <option value ="nickel">Nickel</option>
+                <option value ="penny">Penny</option>
+            </select>
+            <button type = "submit">Make Money</button>
+        </form>
+        <!-- <div id="emptyForCoins"></div> -->
+        <!-- <img id = "quarterImage" style = "display: none" src = "http://www.parkquarters.com/wp-content/uploads/2009/11/Park-Quarter-Obverse-Design.jpg"> -->
+    </section>
+    <section id = "emptyForCoins">
+        <div id = "disappear"></div>
+    </section>
+    <script src="./money.js"></script>
+</body>
+</html>

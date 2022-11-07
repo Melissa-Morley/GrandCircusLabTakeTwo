@@ -21,7 +21,7 @@ let submissions = [
         console.log(array);
     }
         
-    addSubmission(submissions, "Sally", 40, "2020-01-01");
+    // addSubmission(submissions, "Sally", 40, "2020-01-01");
 
 //////////////////////////////Question 3//////////////////////////////
 
@@ -32,7 +32,7 @@ let submissions = [
     
     
 
-    deleteSubmissionByIndex(submissions, 0);
+    // deleteSubmissionByIndex(submissions, 0);
 
 //////////////////////Question 4////////////////////////
 function deleteSubmissionByName (array, name){
@@ -43,7 +43,7 @@ function deleteSubmissionByName (array, name){
 
 
 
-deleteSubmissionByName(submissions, "Jane");
+// deleteSubmissionByName(submissions, "Jane");
 
 /////////////////Question 5////////////////////////
 function editSubmission(array, index, score){
@@ -62,6 +62,7 @@ editSubmission(submissions, 1, 40);
 ////////////////////Question 6/////////////////
 function findSubmissionByName(array, name){
     let foundObject = array.find(element => name === name)
+    console.log(foundObject);
     return foundObject;
     }
 
@@ -76,7 +77,7 @@ function findLowestScore(array){
     })
 }
 
-findLowestScore(submissions);
+// findLowestScore(submissions);
 
 ////////////////////Question 8//////////////////
 function findAverageScore(array){
@@ -89,7 +90,7 @@ function findAverageScore(array){
     return average;
 }
 
-findAverageScore(submissions);
+// findAverageScore(submissions);
 
 /////////////////////Question 9/////////////////
 function filterPassing(array){
@@ -98,7 +99,7 @@ function filterPassing(array){
     return results;
 }
 
-filterPassing(submissions);
+// filterPassing(submissions);
 
 //////////////////Question 10//////////////////
 function filter90AndAbove(array){
@@ -107,7 +108,7 @@ function filter90AndAbove(array){
     return results;
 }
 
-filter90AndAbove(submissions);
+// filter90AndAbove(submissions);
 
 
 

@@ -1,0 +1,29 @@
+.quarter{
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    background-image: url("http://www.parkquarters.com/wp-content/uploads/2009/11/Park-Quarter-Obverse-Design.jpg");
+}
+
+.dime {
+    background-size: 100px;
+    height: 100px;
+    width: 100px;
+    background-image: url("https://cointrackers.com/img/coins/1968-dime-no-mint-mark.jpg");
+
+}
+
+.nickel{
+    background-size: 100px;
+    height: 100px;
+    width: 100px;
+    background-image: url("https://coinweek.com/wp-content/uploads/2019/07/1982pnickela.jpg");
+
+}
+
+.penny {
+    background-size: 100px;
+    height: 100px;
+    width: 100px;
+    background-image: url("https://www.usmint.gov/wordpress/wp-content/uploads/2022/02/2022-lincoln-penny-uncirculated-obverse-philadelphia-768x768.jpg");
+}
