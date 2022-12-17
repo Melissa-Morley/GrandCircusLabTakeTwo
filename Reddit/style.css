@@ -36,7 +36,8 @@ h1 {
 
 img {
     width: 50%;
-    align-self: stretch;
+    /* height: 300px; */
+    /* align-self: stretch; */
     
 }
 

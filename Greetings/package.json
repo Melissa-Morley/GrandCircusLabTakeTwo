@@ -1,0 +1,22 @@
+{
+  "name": "greetings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  
+  "scripts": {
+    "test": "jest",
+    "start": "ts-node index.ts",
+    "start:dev": "nodemon index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "ts-jest": "^29.0.3"
+  }
+  
+  
+}
