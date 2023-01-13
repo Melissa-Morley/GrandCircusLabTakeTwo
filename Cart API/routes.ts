@@ -73,9 +73,16 @@ itemRouter.post("/", async (req:Request, res:Response) :Promise<Response> => {
 });
 
 itemRouter.delete("/:id", async (req:Request, res:Response) :Promise<Response> => {
-    itemArray.splice(Number(req.params.id) - 1, 1);
+    let itemToDelete = itemArray.find((x) => x.id === Number(req.params.id));
+    
+    if(itemToDelete === undefined){
+        return res.status(404)
+    }
+    
+    else{
+        itemArray.splice(Number(req.params.id) - 1, 1);
 
-    return res.status(204);
+        return res.status(204)};
 });
 
  function GetNextId(){
