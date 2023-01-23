@@ -1,0 +1,21 @@
+.Ad {
+    border: #222 2px solid;
+    color: #000;
+    padding: 0px 20px;
+    width: fit-content;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: gray 0 1px 4px 3px;
+  }
+  
+  .AdLight {
+    border: #222 5px solid;
+    color: #000;
+  }
+  
+  .AdDark{
+    color: #fff;
+    background-color: #222;
+    border: #fff solid 2px;
+  }
+  

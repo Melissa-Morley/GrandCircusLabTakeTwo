@@ -1,0 +1,27 @@
+.progressChocolate {
+    background-color: gray;
+}
+
+.progressChocolate ::-moz-progress-bar{
+    background-color: #4f2c2c;
+}
+
+.progressVanilla {
+    background-color: gray;
+}
+
+.progressVanilla ::-moz-progress-bar {
+    background-color: #cbc0ac;
+}
+
+.progressStrawberry {
+    background-color: gray;
+}
+
+.progressStrawberry ::-moz-progress-bar{
+    background-color: #de8c91;
+}
+
+.buttonLine {
+    background-color: black;
+}

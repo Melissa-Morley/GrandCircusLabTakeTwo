@@ -1,0 +1,57 @@
+header {
+  text-align: center;
+  font:  #0e3c7e;
+  border-bottom: solid lightgray 3px;
+  font-family: "Caveat";
+  font-size: 30px;
+  
+}
+
+h2{
+  font:  #0e3c7e;
+  font-family: "Caveat";
+  font-size: 30px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #0e3c7e;
+  color: white;
+  margin: 3px;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+button:active {
+  background-color: #1e60a9;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+.adDesign {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+
+  .adDesign{
+    width: 50%;
+  }
+
+  .Votes{
+    margin-right: 10px;
+    width: 50%;
+  }
+
+}
