@@ -19,6 +19,7 @@ export function Votes() {
         }
     }
 
+
     return (
         <div className = "Votes">
         <h2>Vote Here</h2>

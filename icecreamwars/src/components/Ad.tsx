@@ -1,13 +1,13 @@
 import '../css/Ad.css';
 
-interface AdProperties{
-    flavor:string,
-    isLight:boolean,
-    fontSize:number 
+interface AdProps{
+    flavor: string,
+    fontSize: number,
+    darkTheme: boolean
 }
 
-export function Ad(props:any){
-    let className = "Ad " + (props.isLight ? "AdLight" : "AdDark");
+export function Ad(props:AdProps){
+    let className = "Ad " + (props.darkTheme ? "AdLight" : "AdDark");
 
     return (
         <div className= {className}>

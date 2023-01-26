@@ -1,27 +1,19 @@
 .progressChocolate {
-    background-color: gray;
+    /* background-color: pink; */
+    accent-color:#4f2c2c;
+    /* -webkit-appearance: none; */
 }
 
-.progressChocolate ::-moz-progress-bar{
-    background-color: #4f2c2c;
-}
-
-.progressVanilla {
-    background-color: gray;
-}
-
-.progressVanilla ::-moz-progress-bar {
-    background-color: #cbc0ac;
+ .progressVanilla {
+    /* background-color: pink; */
+    accent-color: #cbc0ac;
 }
 
 .progressStrawberry {
-    background-color: gray;
+    /* background-color: gray; */
+    accent-color: #de8c91;
 }
 
-.progressStrawberry ::-moz-progress-bar{
-    background-color: #de8c91;
-}
-
-.buttonLine {
-    background-color: black;
+progress ::-webkit-progress-value{
+background-color: purple;
 }

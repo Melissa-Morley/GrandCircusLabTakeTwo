@@ -1,16 +1,25 @@
 header {
-  text-align: center;
   font:  #0e3c7e;
   border-bottom: solid lightgray 3px;
-  font-family: "Caveat";
-  font-size: 30px;
-  
+  display: flex;
+  justify-content: space-between;
+}
+
+.Ads{
+  display: flex;
+  justify-content: space-around;
 }
 
 h2{
   font:  #0e3c7e;
   font-family: "Caveat";
   font-size: 30px;
+  font-size: 30px;
+}
+
+.WelcomeMessage{
+  margin-right: 20px;
+  margin-top: 30px;
 }
 
 .main {

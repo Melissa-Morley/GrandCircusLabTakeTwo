@@ -3,13 +3,9 @@ import { Ad } from "./Ad";
 
 export function AdDesigner() {
     const [flavor, setFlavor] = useState<string>("Chocolate");
-    const [isLight, setIsLight] = useState<boolean>(true);
+    const [darkTheme, setDarkTheme] = useState<boolean>(true);
     const [fontSize, setfontSize] = useState<number>(24);
-    const [buttonActive, setButtonActive] = useState<boolean>(false);
-
-    const ToggleClass = () => {
-        setButtonActive(!buttonActive);
-    };
+    // const [buttonActive, setButtonActive] = useState<boolean>(false);
 
     
     
@@ -18,13 +14,12 @@ export function AdDesigner() {
             <h2>Ad Designer</h2>
 
             <Ad flavor= {flavor}
-                isLight = {isLight}
+                darkTheme = {darkTheme}
                 fontSize = {fontSize}
             />
 
             <h3>What to Support</h3>
 
-            
 
             <div className = "button-line">
             <button onClick={() => setFlavor("Chocolate")}>Chocolate</button>
@@ -35,8 +30,8 @@ export function AdDesigner() {
 
             <h3>Color Theme</h3>
             <div className = "button-line">
-            <button onClick = {() => setIsLight(true)}>Light</button>
-            <button onClick = {() => setIsLight(false)}>Dark</button>
+            <button onClick = {() => setDarkTheme(true)}>Light</button>
+            <button onClick = {() => setDarkTheme(false)}>Dark</button>
             </div>
 
             <h3>Font Size</h3>
