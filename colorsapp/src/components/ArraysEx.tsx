@@ -23,12 +23,15 @@ export function ArraysEx () {
     return (
       
       <div>
+        <h2>Colors</h2>
         <ol>
         {colors.map((color, index) => <li key = {index}>{color}</li>)}
         </ol>
-        <button onClick = {() => addColor("Violet")}>Violet</button>
+        <button onClick = {() => addColor("Violet")}>Add Violet</button>
+        <button onClick = {() => addColor("Blue")}>Add Blue</button>
+        <button onClick = {() => addColor("Green")}>Add Green</button>
 
-
+        <h2>Pets</h2>
         <table>
             <tr>
             <th>Name</th>

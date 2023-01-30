@@ -5,9 +5,7 @@ export function AdDesigner() {
     const [flavor, setFlavor] = useState<string>("Chocolate");
     const [darkTheme, setDarkTheme] = useState<boolean>(true);
     const [fontSize, setfontSize] = useState<number>(24);
-    // const [buttonActive, setButtonActive] = useState<boolean>(false);
-
-    
+   
     
     return(
         <div className = "adDesign">

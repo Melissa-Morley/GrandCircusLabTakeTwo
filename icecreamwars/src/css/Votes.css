@@ -1,9 +1,3 @@
-.progressChocolate {
-    /* background-color: pink; */
-    accent-color:#4f2c2c;
-    /* -webkit-appearance: none; */
-}
-
  .progressVanilla {
     /* background-color: pink; */
     accent-color: #cbc0ac;
@@ -12,6 +6,12 @@
 .progressStrawberry {
     /* background-color: gray; */
     accent-color: #de8c91;
+}
+
+.progressChocolate {
+    /* background-color: pink; */
+    accent-color:brown;
+    /* -webkit-appearance: none; */
 }
 
 progress ::-webkit-progress-value{
