@@ -1,0 +1,35 @@
+.Quotes{
+  background-color: lightgoldenrodyellow;
+}
+
+header{
+  color: goldenrod;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+
+}
+
+.cardDisplay{
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  border: solid 2px goldenrod;
+  background-color: lightslategray;
+}
+
+.cardText{
+  color: goldenrod;
+  font-family: 'Dancing Script', cursive;
+}
+
+.cardFooter{
+  color: goldenrod;
+  font-family: 'Dancing Script', cursive;
+}

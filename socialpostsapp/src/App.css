@@ -1,0 +1,119 @@
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.fullPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f3f1f7;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: auto;
+  font-size: 24px;
+  color: white;
+  background-color: #03a9f4;
+  font-family: 'Dosis', sans-serif;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  
+}
+
+
+.overlay {
+  background: rgba(49,49,49,0.8);
+}
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #79c5e8;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+  font-size: 24px;
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+
+}
+
+h1{
+  color: #03a9f4;
+  font-family: 'Homemade Apple', cursive;
+  text-align: center;
+}
+
+.postDisplay{
+  width: 50%;
+  margin-left: 22%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid black 2px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.individualPost{
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 10px;
+}
+
+.postDeleteBtn {
+  height: 70%;
+}
+
+.form{
+  display:flex;
+  flex-direction: column;
+}
+
+.titleInput{
+  height: 50px;
+  border-radius: 10px;
+}
+
+.thoughtInput{
+    height: 100px;
+    border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.addPostBtn{
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: 'Dosis', sans-serif;
+}
+
+h3{
+  font-size: 24px;
+}
