@@ -1,40 +1,27 @@
 import React, { useState } from "react"
+import { Post } from "../interfaces/Post";
 
 
-export interface IPostFormProps{
-    addPost: Function,
-    // onClose: Function
-}
-
-export function PostForm(props:IPostFormProps){
+export function PostForm({onSubmit, onClose} : {onSubmit: (post: Post) => void; onClose: () => void}){
 
     const [title, setTitle] = useState<string>("");
     const [thought, setThought] = useState<string>("");
 
-    function onSubmit(e:React.FormEvent<HTMLElement>){
+    const handleSubmit = (e:React.FormEvent) => {
         e.preventDefault();
-
-        props.addPost({title: title, thought: thought})
-
+        onSubmit({title, thought});
     }
 
-    
-
-    function onClose(){
-
-    }
-
-
-    return(
+    return (
         <div>
-            <form className = "form" onSubmit = {onSubmit}>
-                <button onClick = {onClose}>X</button>
-                <label>Title </label>
-                <input data-testid = "titleTest" className = "titleInput" type = "text" onChange = {(e) => setTitle(e.target.value)}></input>
-                <label>Thought </label>
-                <input data-testid = "thoughtTest" className = "thoughtInput" type = "text" onChange = {(e) => setThought(e.target.value)}></input>
-                <button className = "addPostBtn" type = "submit">Add Post</button>
-            </form>
-        </div>
+//             <form className = "form" onSubmit = {handleSubmit}>
+//                 <button onClick = {onClose}>X</button>
+//                 <label>Title</label>
+//                 <input data-testid = "titleTest" className = "titleInput" type = "text" onChange = {(e) => setTitle(e.target.value)}></input>
+//                 <label>Thought </label>
+//                 <input data-testid = "thoughtTest" className = "thoughtInput" type = "text" onChange = {(e) => setThought(e.target.value)}></input>
+//                 <button className = "addPostBtn" type = "submit">Add Post</button>
+//             </form>
+//         </div>
     )
 }

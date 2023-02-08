@@ -17,31 +17,39 @@ export function SocialPosts(){
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
 
-    function getNextID(){
-        return Math.max(...posts.map((x) => x.id)) + 1;
-    }
+    // function getNextID(){
+    //     return Math.max(...posts.map((x) => x.id)) + 1;
+    // }
     
 
-    function addPost(post:Post){
-        post.id = getNextID();
-        setPosts([post, ...posts])
+    function addPost(newPost:Post){
+        // newPost.id = getNextID();
+        setPosts([newPost, ...posts])
         setModal(!modal)
     }
 
-    
-    // function onDelete(index:number){
+    const handleDelete = (index: number) => {
+        setPosts(posts.filter((_, i) => i !== index));
+    }
+    // function onDelete(){
     //     setPosts(posts => {
-    //         return posts.filter((_, i) => i !== index)
+    //         return posts.filter((posts) => posts.id !== id)
     //     })
     // }
 
-    const onDelete = (index:number) => {
-        let newPostList = posts;
+    // const onDelete = (index:number) => {
+    //     let newPostList = posts;
 
-        newPostList.splice(index, 1)
+    //     newPostList.splice(index, 1)
 
-        setPosts([...newPostList])
-    }
+    //     setPosts([...newPostList])
+    // }
+
+//    function onDelete(id:number){
+//         const newPostList = posts.filter((post) => post.id !== id);
+
+//         setPosts(newPostList);
+//     }
 
     
     return (
@@ -52,18 +60,13 @@ export function SocialPosts(){
             </Button>
             <Modal  className="overlay" isOpen = {modal} toggle = {toggle}>
                 <div className="modal-content">
-            <ModalHeader>
-            {/* <button className="close-modal" onClick={toggle}>
-                X
-              </button> */}
-            </ModalHeader>
             <ModalBody>
-                <PostForm addPost = {addPost}/>
+                <PostForm onSubmit= {addPost} onClose = {() => toggle}/>
             </ModalBody>
                 </div>
             </Modal>
            <section className = "postDisplay">
-            {posts.map((post) => <PostInList post = {post} onDelete = {onDelete}/>)}
+            {posts.map((post, index) => <PostInList key={index} post = {post} onDelete = {() => handleDelete(index)}/>)}
             </section>
            
         </div>
